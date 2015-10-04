@@ -1,3 +1,7 @@
+import java.io.*;
+
+public class LectorFicha{
+
 public void leerDiccionario(String file) throws FileNotFoundException{
 		File archivo = new File(file);
 		String info = "";
@@ -13,3 +17,4 @@ public void leerDiccionario(String file) throws FileNotFoundException{
 			e.printStackTrace();
 		}
 	}
+}
