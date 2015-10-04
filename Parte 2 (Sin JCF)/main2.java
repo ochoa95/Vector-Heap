@@ -7,6 +7,12 @@ import java.util.Vector;
 import java.util.PriorityQueue;
 import java.util.Queue;
 
+/**
+ * @author Delbert Custodio, 14246; Jose ange Ochoa, 14320
+ *
+ *Main se encarga de llevar a cabo la lectura del archivo de texto y de
+ *mostrar la cola segun el orden de atencion
+ */
 public class main {
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public static void main(String[] args){
@@ -16,6 +22,8 @@ public class main {
 		Vector<paciente2> Pacientes = new Vector<paciente2>();
 		
 		try{
+			
+			//Se lee el archivo
 			FileInputStream Stream = new FileInputStream("pacientes.txt");
 			DataInputStream Stream2 = new DataInputStream(Stream);
 			BufferedReader Stream3 = new BufferedReader(new InputStreamReader(Stream2));
@@ -40,6 +48,7 @@ public class main {
                  } 
 	            i=0;
 	            partes[2]= Linea.substring(principio+1, Linea.length());
+	           //Se crea un vector con los pacientes y se muestran
 	            Pacientes.add(new paciente2<String>(partes[0],partes[1],partes[2]));
 	            cantP++;
 	            System.out.println(partes[0]+","+partes[1]+","+partes[2]);
@@ -48,6 +57,8 @@ public class main {
 			
 			
 			System.out.println("\n Lista en orden de atencion:");
+			
+			//Impresion en orden de atencion
 			
 			String OrdenP="";
 			VectorHeap2 V2 = new VectorHeap2(Pacientes);
@@ -60,6 +71,7 @@ public class main {
 			System.out.println(OrdenP);	
 		}
 		catch (Exception e){
+			//Error
 			System.out.println(e);
 			System.out.println("Hubo error, reinicie el programa");
 		}

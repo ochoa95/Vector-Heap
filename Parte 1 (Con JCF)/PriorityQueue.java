@@ -2,6 +2,9 @@
 /**
  * The Interface PriorityQueue.
  *
+ *
+ *Obtenida del libro de texto, capitulo 13
+ *
  * @param <E> the element type
  */
 public interface PriorityQueue<E extends Comparable<E>>

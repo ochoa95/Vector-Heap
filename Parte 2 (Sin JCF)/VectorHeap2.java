@@ -4,16 +4,18 @@ import java.util.Vector;
 // TODO: Auto-generated Javadoc
 /**
  * The Class VectorHeap.
+ * 
+ * Se consiguio del libro de Texto, Cap 13
  *
  * @param <E> the element type
  */
 public class VectorHeap2 < E extends Comparable<E>> implements PriorityQueue2<E>{
 	
-	/** The data. */
+	/**donde se guardaran los pacientes */
 	protected Vector<E> data; // the data, kept in heap order
 	
 	/**
-	 *
+	 *Constructor
 	 */
 	public VectorHeap2()
 	// post: constructs a new priority queue
@@ -22,7 +24,7 @@ public class VectorHeap2 < E extends Comparable<E>> implements PriorityQueue2<E>
 	}
 	
 	/**
-	 * 
+	 * Constructor con vector
 	 *
 	 * @param 
 	 */
@@ -132,9 +134,6 @@ public class VectorHeap2 < E extends Comparable<E>> implements PriorityQueue2<E>
 		percolateUp(data.size()-1);
 	}
 	
-	/* (non-Javadoc)
-	 * @see PriorityQueue#remove()
-	 */
 	@Override
 	public E remove() {
 		//pre: !isEmpty()

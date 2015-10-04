@@ -1,7 +1,9 @@
 /*
  * Delbert Custodio, 14246
- * Jose Angel Ochoa, 14
+ * Jose Angel Ochoa, 14320
  * 
+ * 
+ * Este main implementa el JCF para la Priority Queue
  * 
  * */
 
@@ -16,6 +18,10 @@ import java.util.Vector;
 import java.util.PriorityQueue;
 import java.util.Queue;
 
+/**
+ * @author Delbert Custodio, 14246; Angel Ochoa, 14320
+ *
+ */
 public class main {
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public static void main(String[] args){
@@ -34,6 +40,8 @@ public class main {
 			int cantP =0;
 			
 
+			//Lectura del archivo txt y la lista de pacientes
+			
 			System.out.println("Lista de pacientes:");
 			while ( ( Linea = Stream3.readLine() )!=null){
 				int principio=0;
@@ -56,6 +64,8 @@ public class main {
 			Stream2.close();
 			
 			
+			
+			//Impresion del orden de atencion
 			System.out.println("\n Lista en orden de atencion:");
 			
 			String OrdenP="";

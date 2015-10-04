@@ -3,6 +3,11 @@
  * 
  * */
 
+/**
+ * Clase que se encarga de gaurdar las fichas de los pacientes
+ *
+ * @param <E>
+ */
 public class paciente<E> implements Comparable<E>{
 	
 	private String nombre;
@@ -10,11 +15,7 @@ public class paciente<E> implements Comparable<E>{
 	private String prioridad;
 
 	/**
-	 * Instantiates a new paciente.
-	 *
-	 * @param nombre
-	 * @param Caso: caso del paciente
-	 * @param prioridad
+	 * 
 	 */
 	public paciente(String Paciente, String Caso, String Prioridad) {
 		super();
@@ -24,7 +25,7 @@ public class paciente<E> implements Comparable<E>{
 	}
 
 	public int compareTo(E Paciente) {
-		return this.prioridad.compareTo(((paciente ) Paciente).getPrioridad());
+		return this.prioridad.compareTo(((paciente) Paciente).getPrioridad());
 	}
 
 	/**
@@ -38,7 +39,7 @@ public class paciente<E> implements Comparable<E>{
 
 	/**
 	 * 
-	 *
+	 *Setters y Getters de aqui para abajo
 	 * @param 
 	 */
 	public void setNombrePaciente(String Paciente) {
@@ -59,8 +60,8 @@ public class paciente<E> implements Comparable<E>{
 	 *
 	 * @param 
 	 */
-	public void setEnfermedad(String enfermedad) {
-		this.caso = enfermedad;
+	public void setCaso(String Caso) {
+		this.caso = Caso;
 	}
 
 	/**

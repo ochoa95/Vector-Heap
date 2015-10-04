@@ -1,3 +1,8 @@
+/**
+ * @author Delbert Custodio, 14245; Angel Ochoa, 14320
+ *
+ * @param <E>
+ */
 public class paciente2<E> implements Comparable<E>{
 	
 	/**  */
@@ -10,7 +15,7 @@ public class paciente2<E> implements Comparable<E>{
 	private String prioridad;
 
 	/**
-	 * 
+	 * Constructor
 	 */
 	public paciente2(String Paciente, String Caso, String Prioridad) {
 		super();
@@ -26,7 +31,7 @@ public class paciente2<E> implements Comparable<E>{
 	}
 
 	/**
-	 * 
+	 * Setters y Getters de aqui para abajo
 	 */
 	public String getNombrePaciente() {
 		return nombre;

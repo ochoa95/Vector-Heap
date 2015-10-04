@@ -4,6 +4,8 @@ import java.util.Vector;
 // TODO: Auto-generated Javadoc
 /**
  * The Class VectorHeap.
+ * 
+ * Obtenida del libro de texto, capitulo 13
  *
  * @param <E> the element type
  */
