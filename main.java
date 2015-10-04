@@ -24,6 +24,7 @@ public class main {
 			int i;
 			
 
+			System.out.println("Lista de pacientes:");
 			while ( ( Linea = Stream3.readLine() )!=null){
 				int principio=0;
 	            int nop=0;
@@ -39,9 +40,12 @@ public class main {
 	            i=0;
 	            partes[2]= Linea.substring(principio+1, Linea.length());
 	            Pacientes.add(new paciente<String>(partes[0],partes[1],partes[2]));
+	            System.out.println(partes[0]+","+partes[1]+","+partes[2]);
 			}
 			Stream2.close();
 			
+			
+			System.out.println("\n Lista en orden de atencion:");
 			
 			String OrdenP="";
 			VectorHeap V2 = new VectorHeap(Pacientes);
