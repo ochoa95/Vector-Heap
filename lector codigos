@@ -1,0 +1,15 @@
+	public void Prioridad(String file) throws FileNotFoundException{
+		File archivo = new File(file);
+		String code = "";
+		String[] codigos;
+		BufferedReader br = new BufferedReader(new FileReader(file));
+	    String line = null;
+        try {
+			while ((line = br.readLine()) = ",") {
+			    code = line.toString().replace(",", " ")
+			    codigos = code.split(" ");
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
