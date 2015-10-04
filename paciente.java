@@ -1,8 +1,10 @@
 import java.util.*;
 
-public class paciente<E> implements Comparable<E>{
+public class paciente<E > implements Comparable<E>{
 
-	
+	private String Caso;
+	private String Prioridad;
+	private String Nombre;
 
 	public paciente(String a,String b,String c){
 		
@@ -12,7 +14,7 @@ public class paciente<E> implements Comparable<E>{
 		
 	}
 	
-	private String Nombre;
+	
 	public String getNombre() {
 		return Nombre;
 	}
@@ -43,12 +45,9 @@ public class paciente<E> implements Comparable<E>{
 	}
 
 
-	private String Caso;
-	private String Prioridad;
-	
 	@Override
-	public int compareTo(E arg0) {
-		
+	public int compareTo(E o) {
+		// TODO Auto-generated method stub
 		return 0;
 	}
 
