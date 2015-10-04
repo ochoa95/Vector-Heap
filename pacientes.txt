@@ -1,4 +1,4 @@
-(Juan Perez, fractura de dedo, C)
-(Luisa Motta, ataque anafilaptico, A)
-(Edgar Ochoa, Apendicitis, B)
-(Cindy Montufar, malestares estomacales, E)
+(C, Juan Perez, fractura de dedo)
+(A, Luisa Motta, ataque anafilaptico)
+(B, Edgar Ochoa, Apendicitis)
+(E, Cindy Montufar, malestares estomacales)
