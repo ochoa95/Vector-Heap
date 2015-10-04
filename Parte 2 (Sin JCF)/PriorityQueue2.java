@@ -4,7 +4,7 @@
  *
  * @param <E> the element type
  */
-public interface PriorityQueue<E extends Comparable<E>>
+public interface PriorityQueue2<E extends Comparable<E>>
 {
 	
 	/**
@@ -55,5 +55,4 @@ public interface PriorityQueue<E extends Comparable<E>>
 	 */
 	public void clear();
 	// post: removes all elements from queu
-
 }

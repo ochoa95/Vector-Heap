@@ -11,9 +11,9 @@ public class main {
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public static void main(String[] args){
 		int nopa = 0;
-		VectorHeap V  = new VectorHeap();
+		VectorHeap2 V  = new VectorHeap2();
 		@SuppressWarnings("rawtypes")
-		Vector<paciente> Pacientes = new Vector<paciente>();
+		Vector<paciente2> Pacientes = new Vector<paciente2>();
 		
 		try{
 			FileInputStream Stream = new FileInputStream("pacientes.txt");
@@ -40,7 +40,7 @@ public class main {
                  } 
 	            i=0;
 	            partes[2]= Linea.substring(principio+1, Linea.length());
-	            Pacientes.add(new paciente<String>(partes[0],partes[1],partes[2]));
+	            Pacientes.add(new paciente2<String>(partes[0],partes[1],partes[2]));
 	            cantP++;
 	            System.out.println(partes[0]+","+partes[1]+","+partes[2]);
 			}
@@ -50,9 +50,10 @@ public class main {
 			System.out.println("\n Lista en orden de atencion:");
 			
 			String OrdenP="";
-			VectorHeap V2 = new VectorHeap(Pacientes);
+			VectorHeap2 V2 = new VectorHeap2(Pacientes);
+			
 			for (i=0;i<cantP;i++){
-				paciente pacientes = (paciente) V2.remove();
+				paciente2 pacientes = (paciente2) V2.remove();
 				OrdenP = OrdenP+pacientes.getNombrePaciente()+" "+","+pacientes.getCaso()+" "+","+pacientes.getPrioridad()+"\n";    
 			}
 			
