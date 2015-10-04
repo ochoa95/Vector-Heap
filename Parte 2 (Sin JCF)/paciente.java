@@ -1,20 +1,20 @@
-/*
- * Clase que se encarga de guardar la ficha de los pacientes
- * 
- * */
-
 public class paciente<E> implements Comparable<E>{
 	
+	/** The nombre paciente. */
 	private String nombre;
+	
+	/** The enfermedad. */
 	private String caso;
+	
+	/** The prioridad. */
 	private String prioridad;
 
 	/**
 	 * Instantiates a new paciente.
 	 *
-	 * @param nombre
-	 * @param Caso: caso del paciente
-	 * @param prioridad
+	 * @param nombrePaciente the nombre paciente
+	 * @param enfermedad the enfermedad
+	 * @param prioridad the prioridad
 	 */
 	public paciente(String Paciente, String Caso, String Prioridad) {
 		super();
@@ -23,59 +23,63 @@ public class paciente<E> implements Comparable<E>{
 		this.prioridad = Prioridad;
 	}
 
+	/* (non-Javadoc)
+	 * @see java.lang.Comparable#compareTo(java.lang.Object)
+	 */
 	public int compareTo(E Paciente) {
+		// TODO Auto-generated method stub
 		return this.prioridad.compareTo(((paciente ) Paciente).getPrioridad());
 	}
 
 	/**
-	 * Devuelve el nombre.
+	 * Gets the nombre paciente.
 	 *
-	 * @return nombre
+	 * @return the nombre paciente
 	 */
 	public String getNombrePaciente() {
 		return nombre;
 	}
 
 	/**
-	 * 
+	 * Sets the nombre paciente.
 	 *
-	 * @param 
+	 * @param nombrePaciente the new nombre paciente
 	 */
 	public void setNombrePaciente(String Paciente) {
 		this.nombre = Paciente;
 	}
 
 	/**
-	 * 
+	 * Gets the enfermedad.
 	 *
-	 * @return 
+	 * @return the enfermedad
 	 */
 	public String getCaso() {
 		return caso;
 	}
 
 	/**
-	 * .
+	 * Sets the enfermedad.
 	 *
-	 * @param 
+	 * @param enfermedad the new enfermedad
 	 */
 	public void setEnfermedad(String enfermedad) {
 		this.caso = enfermedad;
 	}
 
 	/**
-	 * 
+	 * Gets the prioridad.
 	 *
-	 * @return 
+	 * @return the prioridad
 	 */
 	public String getPrioridad() {
 		return prioridad;
 	}
 
 	/**
-	 * 
+	 * Sets the prioridad.
 	 *
-	 * @param 
+	 * @param prioridad the new prioridad
 	 */
 	public void setPrioridad(String prioridad) {
 		this.prioridad = prioridad;

@@ -1,12 +1,3 @@
-/*
- * Delbert Custodio, 14246
- * Jose Angel Ochoa, 14
- * 
- * 
- * */
-
-
-
 import java.io.BufferedReader;
 import java.io.DataInputStream;
 import java.io.FileInputStream;

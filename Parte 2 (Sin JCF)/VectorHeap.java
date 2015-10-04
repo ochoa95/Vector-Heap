@@ -9,8 +9,6 @@ import java.util.Vector;
  */
 public class VectorHeap < E extends Comparable<E>> extends PriorityQueue<E>{
 	
-	//Obtenido del capitulo 13 del texto de teoria de la clase
-	
 	/** The data. */
 	protected Vector<E> data; // the data, kept in heap order
 	
