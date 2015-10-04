@@ -1,0 +1,15 @@
+public void leerDiccionario(String file) throws FileNotFoundException{
+		File archivo = new File(file);
+		String info = "";
+		String[] ficha;
+		BufferedReader br = new BufferedReader(new FileReader(file));
+	    String line = null;
+        try {
+			while ((line = br.readLine()) != null) {
+			    info = line.toString().replace("(", "").replace(",", "").replace(")", "");
+			    ficha = info.split(" ");
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
