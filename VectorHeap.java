@@ -1,44 +1,18 @@
-// An implementation of a priority queue in a vector.
-// (c) 1998, 2001, 2002 duane a. bailey
-package structure5;
-
 /**
- * This class implements a priority queue based on a traditional
- * array-based heap.  Most heap operations, including insert and remove,
- * execute in logarithmic time, but the minimum element can be returned 
- * in constant time. 
- *
- * <P>
- * Example usage:
- * <P>
- * To print out a list of programmers sorted by age we could use the following:
- * <pre>
- * public static void main(String[] argv){
- *      //initialize a new fib heap
- *      VectorHeap programmers = new {@link #VectorHeap()};
- *
- *      //add programmers and their ages to heap
- *      //ages current of 7/22/2002
- *      //add programmers and their ages to heap
- *      //ages current of 7/22/2002
- *        programmers.{@link #add(Comparable) add(new ComparableAssociation(new Integer(22), "Evan"))};
- *      programmers.add(new ComparableAssociation(new Integer(19), "Chris"));
- *      programmers.add(new ComparableAssociation(new Integer(20), "Shimon"));
- *      programmers.add(new ComparableAssociation(new Integer(21), "Diane"));
- *      programmers.add(new ComparableAssociation(new Integer(21), "Lida"));    
- *      programmers.add(new ComparableAssociation(new Integer(20), "Rob"));     
- *      programmers.add(new ComparableAssociation(new Integer(20), "Sean"));    
- *
- *      //print out programmers 
- *      while(!programmers.{@link #isEmpty()}){
- *          ComparableAssociation p = (ComparableAssociation)programmers.{@link #remove()};
- *          System.out.println(p.getValue() + " is " + p.getKey() + " years old.");
- *      }
- * }
+ * 
  * </pre>
- * @version $Id: VectorHeap.java 22 2006-08-21 19:27:26Z bailey $
- * @author, 2001 duane a. bailey
+ * @version 
+ * @author Delbert Custodio, 14246
+ * @author Jose Angel Ochoa, 14
+ * 
+ * Clase obtenida del libro de texto, Capitulo 13. Implementa la interface 
+ * PriorityQueue
+ * 
+ * 
  */
+
+import java.util.*;
+
 public class VectorHeap<E extends Comparable<E>> implements PriorityQueue<E>
 {
     /**
@@ -64,9 +38,9 @@ public class VectorHeap<E extends Comparable<E>> implements PriorityQueue<E>
     public VectorHeap(Vector<E> v)
     {
         int i;
-        data = new Vector<E>(v.size()); // we know ultimate size
+        data = new Vector<E>(v.size());
         for (i = 0; i < v.size(); i++)
-        {   // add elements to heap
+        {   
             add(v.get(i));
         }
     }
